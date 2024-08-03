@@ -214,6 +214,11 @@ body{
     
 
 }
+@media (max-width: 600px) {
+   .logo a {
+    font-size: 20px;
+   }
+}
 
 
 
