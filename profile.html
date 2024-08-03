@@ -1,0 +1,190 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Profile</title>  
+    
+</head>  
+<body>  
+
+<div class="profile-header">  
+    <div class="logo">  
+        <h1><a href="home.html">Div Creators</a></h1>
+     </div>  
+ 
+    <nav>  
+        <ul>  
+          
+            <li><a href="home2.html">Logout</a></li>  
+        </ul>  
+    </nav>  
+</div>  
+
+    
+
+<div class="profile-summary">  
+  
+    <h1>Aditya Mandal</h1>  
+    <p>Passionate plant lover and regular blood donor!</p>  
+</div>  
+
+<div class="social-score">  
+    <h2>Your Social Impact Score</h2>  
+    <div class="score">85</div>  
+    <div class="score-description">Your score reflects your contributions to plant and blood donation activities. Higher scores correlate with more impactful participation.</div>  
+</div>  
+
+<div class="donation-activity">  
+    <h2>Your Donation Activities</h2>  
+    <p>Total Blood Donations: 10</p>  
+    <p>Total Trees Planted: 5</p>  
+    <div class="recent-activities">  
+        <p>Recent Activities:</p>  
+        <ul>  
+            <li>Jan 5, 2024: Blood Donated at Community Center</li>  
+            <li>Dec 20, 2023: Planted 2 Trees in oxigen Park</li>  
+        </ul>  
+    </div>  
+    <div class="upcoming-events">  
+        <p>Upcoming Events:</p>  
+        <ul>  
+            <li>Blood Donation Camp - aug 10, 2024</li>  
+        </ul>  
+    </div>  
+</div>  
+
+<div class="achievements">  
+    <h2>Your Achievements</h2>  
+    <div class="badges">  
+        <span class="badge">9+ Donation</span>  
+        <span class="badge">Blood Donor Hero</span>  
+    </div>  
+</div>  
+
+<div class="community-interaction">  
+    <h2>Connect with Others</h2>  
+    <p>Your Connections: Disha (Score: 90), vikash (Score: 60), ayush (Score: 50)</p>  
+    <button style="background-color: #e8fc33; color: rgb(0, 0, 0); border: none; padding: 10px 20px; border-radius: 5px;">Follow New Users</button>  
+</div>  
+
+
+</body>  
+</html>
+
+<style>  
+    body {  
+        font-family: Arial, sans-serif;  
+        margin: 0;  
+        padding: 0;  
+       
+        background-color: #121212;  
+        color: #ffffff;  
+    }  
+    
+    .profile-header {  
+        /* background-color: #f0f8f0;   */
+        padding: 0px;  
+        display: flex;  
+        width: 100%;
+        align-items: center;  
+        justify-content: space-between;  
+        /* position: fixed; */
+    }  
+    .profile-header nav ul {  
+        list-style: none;  
+        display: flex;  
+        margin: 0;  
+        padding: 0;  
+        font-size: 20px;
+    }  
+    .profile-header nav ul li {  
+        margin: 0 25px;  
+        font-weight: bold;
+    }  
+    .profile-header nav ul li a {  
+        color: rgb(224, 197, 23);
+         
+        text-decoration: none;  
+        font-size: px;
+    }  
+    .profile-summary {  
+        
+        text-align: center;  
+       
+        padding: 20px;  
+        /* background-color: #eafaf1;   */
+       
+    }  
+   
+    .social-score, .donation-activity, .achievements, .community-interaction {  
+        background-color: #2c2c2c;  
+        
+        margin: 20px;  
+        padding: 16px;  
+        border-radius: 8px;  
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    }  
+    .score {  
+        font-size: 2em;  
+        color: #27ae60;  
+    }  
+    .badge {  
+        display: inline-block;  
+        background-color: #f7f435;  
+        color: rgb(0, 0, 0);  
+        padding: 5px 10px;  
+        border-radius: 20px;  
+        margin-right: 10px;  
+    }  
+    .footer {  
+        background-color: #c7c72b;  
+        color: rgb(0, 0, 0);  
+        text-align: center;  
+        padding: 20px;  
+        position: relative;  
+    }  
+    .social-links a, .quick-links a {  
+        color: rgb(0, 0, 0);  
+        margin: 0 10px;  
+        text-decoration: none;  
+    }  
+    @media (max-width: 480px) {  
+        .profile-header {  
+            flex-direction: column;  
+            align-items: center;  
+        }  
+        .profile-header nav ul {  
+            flex-direction: column;  
+            padding: 10px 0;  
+        }  
+        .badge {  
+            font-size: 0.8em;  
+            margin: 5px 0;  
+        }  
+    }  
+
+    .logo{
+display: flex;
+
+align-items: center;
+padding: 0 20px;
+width: 50%;
+
+
+}
+.logo a{
+text-decoration: none;
+color: rgb(224, 197, 23);
+font-size: 25px;
+cursor: pointer;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+.logo:active {
+scale: 0.95;
+color: rgb(13, 13, 13);
+}
+
+</style>  

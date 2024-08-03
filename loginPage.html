@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="back-button" onclick="goBack()">Div Creator</button>
+
+    <div class="container">
+        <div class="form-container" id="login">
+            <form action="#" method="POST">
+                <h1>Login</h1>
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <button type="submit" >Login</button>
+                <span>Don't have an account? <a href="#" onclick="switchToRegister()">Register</a></span>
+            </form>
+        </div>
+
+        <div class="form-container" id="register" style="display: none;">
+            <form action="#" method="POST">
+                <h1>Register</h1>
+                <input type="text" placeholder="Full Name" name="fullname" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="password" placeholder="Creat Password" name="password" required>
+                <input type="text" placeholder="Phone Number" name="phone" required>
+                <input type="text" placeholder="Address" name="address" required>
+                <button type="submit">Register</button>
+                <span>Already have an account? <a href="#" onclick="switchToLogin()">Login</a></span>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function switchToRegister() {
+            document.getElementById('login').style.display = 'none';
+            document.getElementById('register').style.display = 'block';
+        }
+
+        function switchToLogin() {
+            document.getElementById('login').style.display = 'block';
+            document.getElementById('register').style.display = 'none';
+        }
+
+        function goBack() {
+            window.history.back(); // Goes back to the previous page  
+        }  
+    </script>
+</body>
+
+</html>
+
+
+<style>
+    body {
+        background-color: #000;
+        color: #fff;
+        font-family: Arial, sans-serif;
+
+        height: 100vh;
+        margin: 0;
+    }
+
+    #back-button {
+        position: relative;
+        margin: 30px;
+        padding: 10px 15px;
+        color: rgb(255, 255, 252);
+        background: none;
+        font-size: 30px;
+        cursor: pointer;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #FFD700;
+        border: none;
+        font-weight: bold;
+
+    }
+
+
+    #back-button:active {
+        scale: 0.95;
+    }
+
+    @media (max-width: 600px) {
+        .form-container {
+            padding: 15px;
+            margin: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            padding: 8px;
+        }
+
+        button {
+            padding: 12px;
+        }
+
+        #back-button {
+            width: 20%;
+        }
+    }
+
+
+
+    .form-container {
+
+        box-sizing: border-box;
+        background-color: #111;
+        padding: 20px;
+        width: 100%;
+
+        max-width: 600px;
+        margin: auto;
+
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(220, 226, 166, 0.8);
+        margin-top: 100px;
+    }
+
+    h1 {
+        color: #FFD700;
+        text-align: center;
+    }
+
+    input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #FFD700;
+        border-radius: 5px;
+        background-color: #222;
+        color: #fff;
+    }
+
+    input::placeholder {
+        color: #aaa;
+    }
+
+    .form-container button {
+        width: 100%;
+        padding: 10px;
+        background-color: #FFD700;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .form-container button:hover {
+        background-color: #FFC300;
+    }
+
+    span {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        color: #FFD700;
+    }
+
+    span a {
+        color: white;
+    }
+</style>
