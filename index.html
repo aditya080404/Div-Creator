@@ -232,18 +232,7 @@ document.querySelectorAll('.menu  a').forEach(anchor => {
     });  
 });
 
-document.querySelectorAll('.dropdown_menu a').forEach(anchor => {  
-    anchor.addEventListener('click', function (e) {  
-        e.preventDefault();  
 
-        const targetId = this.getAttribute('href');  
-        const targetElement = document.querySelector(targetId);  
-        
-        targetElement.scrollIntoView({  
-            behavior: 'smooth'  
-        });  
-    });  
-});
             
     const toggleBtn = document.querySelector('.toggle_btn')
     const toggleBtnIcon = document.querySelector('.toggle_btn i')
